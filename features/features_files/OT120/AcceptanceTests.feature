@@ -4,4 +4,4 @@ Feature: AcceptanceTests
   Scenario: AcceptanceTests
     Given user log in AWS
     When trigger a event
-    Then receives an email
+    Then receives two email
