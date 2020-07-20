@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="acceptancetests;acceptancetests-(uid:e3e4c561-095c-4d1f-9422-a8b3b8b2a9c8)" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="features\features_files\OT120\AcceptanceTests.feature">
+            </property>
+        </properties>
+        <testcase name="Given user log in AWS" classname="acceptancetests;acceptancetests-(uid:e3e4c561-095c-4d1f-9422-a8b3b8b2a9c8)">
+        </testcase>
+        <testcase name="When trigger a event" classname="acceptancetests;acceptancetests-(uid:e3e4c561-095c-4d1f-9422-a8b3b8b2a9c8)" time="0.002">
+        </testcase>
+        <testcase name="Then receives two email" classname="acceptancetests;acceptancetests-(uid:e3e4c561-095c-4d1f-9422-a8b3b8b2a9c8)" time="0.001">
+        </testcase>
+    </testsuite>
+    <testsuite name="automationtests;salesorderrequested-event-is-correctly-created-(uid:0afdf68f-eaef-4879-8d0c-19478ee603dc)" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="features\features_files\OT120\AutomationTests.feature">
+            </property>
+        </properties>
+        <testcase name="Given user trigger a sales order requested event" classname="automationtests;salesorderrequested-event-is-correctly-created-(uid:0afdf68f-eaef-4879-8d0c-19478ee603dc)" time="0.001">
+        </testcase>
+        <testcase name="When user verify his inbox" classname="automationtests;salesorderrequested-event-is-correctly-created-(uid:0afdf68f-eaef-4879-8d0c-19478ee603dc)">
+        </testcase>
+        <testcase name="Then sales order is correctly sent" classname="automationtests;salesorderrequested-event-is-correctly-created-(uid:0afdf68f-eaef-4879-8d0c-19478ee603dc)" time="0.001">
+        </testcase>
+    </testsuite>
+</testsuites>

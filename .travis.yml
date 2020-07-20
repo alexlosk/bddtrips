@@ -8,11 +8,11 @@ before_install:
   - rvm install 2.3
   - rvm use 2.3
   - gem install hiptest-publisher
-  - "hiptest-publisher -c cucumber-js.conf --token=16591052702588123251373194212165198592817397104020362672 --only=features,step_definitions --test-run-id=436857"
+  - "hiptest-publisher -c cucumber-js.conf --token=290358145438978667311986543026879389163461375345386765643 --only=features,step_definitions --test-run-id=436891"
   - npm install
 
 script:
   - node_modules/.bin/cucumber-js --format=json | node_modules/cucumber-junit/bin/cucumber-junit --features-as-suites > junit_output.xml
 
 after_script:
-  - hiptest-publisher -c cucumber-js.conf --token=16591052702588123251373194212165198592817397104020362672 --push=junit_output.xml --test-run-id=436857
+  - hiptest-publisher -c cucumber-js.conf --token=290358145438978667311986543026879389163461375345386765643 --push=junit_output.xml --test-run-id=436857

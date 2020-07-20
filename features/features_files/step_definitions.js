@@ -23,20 +23,8 @@ module.exports = function () {
         callback();
     });
 
-    this.Given(/^a bank account$/, function (callback) {
-        this.actionwords.aBankAccount();
-        callback();
-    });
 
-    this.When(/^user cheks his number$/, function (callback) {
-        this.actionwords.userCheksHisNumber();
-        callback();
-    });
 
-    this.Then(/^number has 20 chars$/, function (callback) {
-        this.actionwords.numberHas20Chars();
-        callback();
-    });
 
     this.Given(/^user trigger a sales order requested event$/, function (callback) {
         this.actionwords.userTriggerASalesOrderRequestedEvent();

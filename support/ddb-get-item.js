@@ -5,7 +5,6 @@ const awsparams = require('../awsparameters.js');
 function ddbGetItem() {
 
   AWS.config.update({ region: region: awsparams.REGION });
-
   // Create the DynamoDB service object
   var ddb = new AWS.DynamoDB({apiVersion: '2012-08-10'});
 
