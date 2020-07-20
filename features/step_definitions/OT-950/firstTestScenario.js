@@ -14,21 +14,13 @@ Given("there is a helloWorld event created with the {string} message", function 
 
 Given(/^a user is logged in AWS$/,  function () {
 //Checking that I am getting credentials successfully from AWS
-  AWS.config.getCredentials(function(err) {
-    if (err) console.log(err.stack);
-    else {
-        console.log("Successfully connected to AWS");
-    }
-    });
 });
 
 When(/^the helloWorld event is triggered$/, function () {
   //publish the message to sns
-  sns.snsPublish();
 });
 
 Then(/^an email should be sent$/, function () {
   // Write code here that turns the phrase above into concrete actions
   //callback(null, 'pending');
-  console.log("Email was sent, check out your email inbox");
 });
