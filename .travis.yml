@@ -15,4 +15,4 @@ script:
   - node_modules/.bin/cucumber-js --format=json | node_modules/cucumber-junit/bin/cucumber-junit --features-as-suites > junit_output.xml
 
 after_script:
-  - hiptest-publisher -c cucumber-js.conf --token=16591052702588123251373194212165198592817397104020362672 --push=junit_output.xml --test-run-id=16534
+  - hiptest-publisher -c cucumber-js.conf --token=16591052702588123251373194212165198592817397104020362672 --push=junit_output.xml --test-run-id=436857
