@@ -18,7 +18,7 @@ const { Given, Then, When, Before, After } = require("cucumber");
         callback();
     });
 
-    Then(/^receives five email$/, function (callback) {
+    Then(/^receives ten emails$/, function (callback) {
         actionwords.receivesTwoEmail();
         callback();
     });
